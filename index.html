@@ -1,0 +1,38 @@
+<!Exercise8:functions in javascript REGNO:21b01a1210>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+    </head>
+
+    <body>
+        <h4 id="one">about functions</h4>
+        <p id="two"></p>
+        <p id="tre"></p>
+        <p id="f"></p>
+        <script defer>
+            function add() {
+                return (20 + 10);
+            };
+            document.getElementById('one').innerHTML = add()
+            function sum(x, y = 30) {
+                return x + y;
+            };
+            document.getElementById('two').innerHTML = (sum(10))
+            const mul = function (x, y) {
+                return (x * y);
+            };
+            document.getElementById('tre').innerHTML = mul(5, 5)
+            const prod = () => {
+                return ("hello");
+            }
+            document.getElementById('f').innerHTML = prod()
+
+        </script>
+    </body>
+
+    </html>
